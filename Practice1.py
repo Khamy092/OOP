@@ -36,6 +36,7 @@ class Student:
     
 
 khamy092 = Student("Taqi", 24, "Second", 3.8, eligibleHonour="N/A", grades=[90, 89, 79, 55, 76, 91, 72, 87])
+
 print("Student:" ,khamy092.name)
 print("Age:" ,khamy092.age)
 print("Year:" ,khamy092.year)
@@ -44,7 +45,9 @@ print("Eligible for Honours:" ,khamy092.get_eligibleHonour())
 print("Overall Grade:" ,khamy092.get_grades())
 
 print("------------------------------------")
+
 james1010 = Student("James", 25, "Third", 4.0, eligibleHonour="N/A", grades=[68, 70, 100, 100, 73, 100, 100, 90])
+
 print("Student:" ,james1010.name)
 print("Age:" ,james1010.age)
 print("Year:" ,james1010.year)
