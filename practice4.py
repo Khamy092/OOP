@@ -6,6 +6,7 @@
 #  - can contain abstract methods
 #  - abstract methods must be implemented in subclasses
 # - abstract methods are defined using the @abstractmethod decorator
+# - this method is used as a base template for other classes to inherit from
 
 
 from abc import ABC, abstractmethod
