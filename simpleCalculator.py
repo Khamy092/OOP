@@ -5,21 +5,23 @@
 # Version: 1.0
 # Purpose: To create a simple calculator that can add, subtract, multiply, and divide using Python Object Oriented Programming
 
-import tkinter as tk
-root = tk.Tk()
-root.title("Simple Calculator")
-root.geometry("500x500")
 
+class Calculator:
+    def __init__(self, num1, num2):
+        self.num1 = num1
+        self.num2 = num2
 
-lable1 = tk.Label(root, text="Hello, I am a simple calculator")
-lable1.pack()
+    def add(self):
+        return self.num1 + self.num2
 
-# put the above text in the middle of the screen    
-lable1.place(relx=0.5, rely=0.5, anchor="center")
+    def subtract(self):
+        return self.num1 - self.num2
 
+    def multiply(self):
+        return self.num1 * self.num2
 
-button1 = tk.Button(root, text="Click me")
-button1.pack()
-button1.place(relx=0.5, rely=0.6, anchor="center")
-
-root.mainloop()
+    def divide(self):
+        return self.num1 / self.num2
+    
+    def power(self):
+        return self.num1 ** self.num2 
