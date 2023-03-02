@@ -3,7 +3,7 @@ import psutil
 
 def report():
     print("Device Report\n")
-
+    
     # Get system information
     print("System:", platform.system())
     print("Release:", platform.release())
@@ -19,6 +19,6 @@ def report():
     partitions = psutil.disk_partitions()
     for partition in partitions:
         usage = psutil.disk_usage(partition.device)
-        print(f'{partition.device} with total size {usage.total / (1024 ** 3)} GB')
+        print(f'{partition.device} with total size {round(usage.total / (1024 ** 3))} GB')
 
 report()
